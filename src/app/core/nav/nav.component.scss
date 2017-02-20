@@ -1,0 +1,32 @@
+.ir-nav {
+  nav {
+    margin: 1em;
+    line-height: 1em;
+  }
+
+  #logo {
+    color: #e2e6e8;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #languages {
+    float: right;
+    font-size: 0.7em;
+    color: #e2e6e8;
+
+    span {
+      opacity: .66;
+    }
+
+    span:first-child {
+      margin-right: 0.2em;
+    }
+
+    span:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import {NgModule, Optional, SkipSelf}     from '@angular/core';
 import {CommonModule}                     from '@angular/common';
 import {FormsModule}                      from '@angular/forms';
 import {Http}                             from '@angular/http';
+import {RouterModule}                     from '@angular/router';
 import {TranslateModule, TranslateLoader} from 'ng2-translate';
 import {TranslateLoaderFactory}           from '../app.translate.factory';
 
@@ -16,6 +17,7 @@ import {FooterComponent} from './footer/footer.component';
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     TranslateModule.forRoot({
       provide: TranslateLoader,
       useFactory: TranslateLoaderFactory,

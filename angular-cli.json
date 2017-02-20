@@ -18,9 +18,15 @@
       "prefix": "ir",
       "mobile": false,
       "styles": [
-        "assets/css/styles.css"
+        "assets/css/styles.css",
+        "assets/css/animate.css"
       ],
       "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "assets/js/jquery.fittext.js",
+        "assets/js/jquery.lettering.js",
+        "assets/js/highlight.min.js",
+        "assets/js/jquery.textillate.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
