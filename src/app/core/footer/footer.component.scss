@@ -5,7 +5,7 @@
   left: 0;
   margin: 1em;
 
-  #footer-email, #footer-email a {
+  #footer-email, #footer-email a:not(span) {
     font-size: 0.9em;
     color: #e2e6e8;
     text-decoration: none;
@@ -25,6 +25,7 @@
     text-decoration: none;
     margin-left: 2em;
     opacity: .66;
+    cursor: pointer;
 
     &:hover {
       opacity: 1;

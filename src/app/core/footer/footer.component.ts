@@ -1,4 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, AfterViewInit} from '@angular/core';
+
+declare let $;
 
 @Component({
   selector: 'ir-footer',
@@ -6,5 +8,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 
-export class FooterComponent {
+export class FooterComponent implements AfterViewInit {
+
+  ngAfterViewInit() {
+    $('#footer-email a').textillate({in: {effect: 'bounceInUp'}});
+    $('#footer-social-links span').textillate({in: {effect: 'bounceInUp'}});
+  }
+
 }

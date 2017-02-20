@@ -3,9 +3,14 @@ body {
     background: #16191b;
     font-weight: 300;
     color: #e2e6e8;
+    overflow: hidden;
 }
 
 .colored {
     color: white !important;
     opacity: 1;
+}
+
+a {
+    cursor: pointer;
 }
