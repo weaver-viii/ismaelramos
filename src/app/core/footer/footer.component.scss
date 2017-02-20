@@ -1,0 +1,37 @@
+:host(ir-footer) {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 2em);
+  left: 0;
+  margin: 1em;
+
+  #footer-email, #footer-email a {
+    font-size: 0.9em;
+    color: #e2e6e8;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: .66;
+
+    a:hover {
+      opacity: 1;
+    }
+  }
+
+  #footer-social-links a {
+    font-size: 0.9em;
+    color: #e2e6e8;
+    text-decoration: none;
+    margin-left: 2em;
+    opacity: .66;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  #footer-social-links {
+    float: right;
+  }
+}

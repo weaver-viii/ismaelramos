@@ -1,10 +1,11 @@
-.ir-nav {
+:host(ir-nav) {
   nav {
     margin: 1em;
-    line-height: 1em;
+    line-height: 1.4em;
   }
 
   #logo {
+    font-size: 1.4em;
     color: #e2e6e8;
     font-weight: bold;
     text-decoration: none;
@@ -13,7 +14,7 @@
 
   #languages {
     float: right;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: #e2e6e8;
 
     span {

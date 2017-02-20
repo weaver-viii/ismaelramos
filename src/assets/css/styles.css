@@ -4,3 +4,8 @@ body {
     font-weight: 300;
     color: #e2e6e8;
 }
+
+.colored {
+    color: white !important;
+    opacity: 1;
+}
