@@ -1,9 +1,9 @@
 :host(ir-footer) {
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 2em);
-  left: 0;
-  margin: 1em;
+  width: 100%;
+
+  footer {
+    margin: 1em;
+  }
 
   #footer-email, #footer-email a:not(span) {
     font-size: 0.9em;
@@ -11,7 +11,6 @@
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
     opacity: .66;
 
     a:hover {
