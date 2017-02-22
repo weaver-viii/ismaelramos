@@ -2,7 +2,11 @@
   width: 100%;
 
   footer {
+    align-items: center;
+    position: absolute;
+    bottom: 0;
     margin: 1em;
+    width: 97.5%;
   }
 
   #footer-email, #footer-email a:not(span) {
