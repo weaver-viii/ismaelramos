@@ -1,4 +1,29 @@
 :host(ir-home-page) {
+  .left {
+    width: 80px;
+    float: left;
+    font-size: 0.7em;
+    opacity: .33;
+    text-align: right;
+    line-height: 1.5em;
+  }
+  .right {
+    margin-left: 90px;
+  }
+  .clear {
+    clear: both;
+  }
+
+  #greeting {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  #about {
+    font-weight: normal;
+    font-size: 0.8em;
+  }
+
   #wrapper {
     width: 70%;
     margin: 0 auto;
@@ -8,5 +33,17 @@
     right: 0;
     left: 0;
     top: 60px;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -1,9 +1,27 @@
 <div id="wrapper">
     <section>
-        <h1 id="greeting" [innerHtml]="greeting"></h1>
+        <div>
+            <div class="left">
+            </div>
+            <div class="right">
+                <h1 id="greeting" [innerHtml]="greeting"></h1>
+            </div>
+            <div class="clear"></div>
+        </div>
     </section>
     <section id="about">
-        <h3 class="section-title typer-component">Info</h3>
-        <div class="content">I'm Justin Windle, a Creative Developer from London who likes to mix code, animation, interactivity and generative design. I work across the full JavaScript stack and have presented my work at conferences like Resonate and FITC. Formerly Google Creative Lab / Qwiki / FI. I'm currently freelancing.</div>
+        <div id="info-title" class="left">
+            INFO.
+        </div>
+        <div id="info-content" class="right">
+            I'm Justin Windle, a Creative Developer from London who likes to mix code, animation, interactivity and
+            generative design. I work across the full JavaScript stack and have presented my work at conferences
+            like Resonate and FITC. Formerly Google Creative Lab / Qwiki / FI. I'm currently freelancing.
+        </div>
+
+        <div class="demo" data-in-effect="rollIn">
+            <p>Each of this letter will animate.</p>
+        </div>
+        <div class="clear"></div>
     </section>
 </div>
