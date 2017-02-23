@@ -11,8 +11,8 @@ declare let $;
 export class FooterComponent implements AfterViewInit {
 
   ngAfterViewInit() {
-    $('#footer-email a').textillate({in: {effect: 'bounceInUp'}});
-    $('#footer-social-links span').textillate({in: {effect: 'bounceInUp'}});
+    $('#footer-email a').textillate({in: {effect: 'bounceInLeft'}});
+    $('#footer-social-links span').textillate({initialDelay: 250, in: {effect: 'bounceInRight'}});
   }
 
 }

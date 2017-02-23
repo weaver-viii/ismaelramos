@@ -17,7 +17,7 @@ export class HomePageComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    $('#greeting').textillate({in: {delay: 250, effect: 'slideInLeft'}});
+    $('#greeting').textillate({delay: 500, in: {delay: 250, effect: 'slideInLeft'}});
   }
 
 }
