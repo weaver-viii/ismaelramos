@@ -19,9 +19,24 @@ export class HomePageComponent implements AfterViewInit {
     this.labs = [
       {
         id: '001',
+        name: 'Peluqueria Pilar Silvan',
+        link: 'https://www.peluqueriapilarsilvan.com'
+      },
+      {
+        id: '002',
         name: 'Packing up',
         link: 'https://play.google.com/store/apps/details?id=packingup.core.activities&hl=es'
-      }
+      },
+      {
+        id: '003',
+        name: 'SECD',
+        link: 'https://sourceforge.net/projects/secd/'
+      },
+      {
+        id: '004',
+        name: 'Gijón Squash Club app',
+        link: 'https://play.google.com/store/apps/details?id=gijonsquashclub.liga'
+      },
     ];
   }
 
