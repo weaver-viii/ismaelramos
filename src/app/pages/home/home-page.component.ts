@@ -9,7 +9,7 @@ declare let $;
 })
 
 export class HomePageComponent implements AfterViewInit {
-  private greetings = ['Hello', 'Salut', 'Hallo', 'Hola', 'Konnichiwa', 'Hi'];
+  private greetings = ['Hello!', 'Salut!', 'Hallo!', 'Hola!', 'Konnichiwa!', 'Hi!', 'Hey!'];
   greeting: string;
 
   constructor() {
@@ -19,5 +19,4 @@ export class HomePageComponent implements AfterViewInit {
   ngAfterViewInit() {
     $('#greeting').textillate({delay: 500, in: {delay: 250, effect: 'slideInLeft'}});
   }
-
 }
