@@ -2,14 +2,21 @@
   nav {
     margin: 1em;
     line-height: 1.4em;
+    text-align: center;
   }
 
   #logo {
+    float: left;
     font-size: 1.4em;
     color: #e2e6e8;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  #eggs {
+    font-size: 0.5em;
+    opacity: 0.2;
   }
 
   #languages {

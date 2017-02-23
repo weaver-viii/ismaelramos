@@ -11,6 +11,7 @@ import {LoggerService}        from './logger.service';
 
 import {NavComponent}    from './nav/nav.component';
 import {FooterComponent} from './footer/footer.component';
+import {EasterEggService} from '../shared/easter-egg.service';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {FooterComponent} from './footer/footer.component';
     FooterComponent
   ],
   providers: [
-    LoggerService
+    LoggerService,
+    EasterEggService
   ]
 })
 

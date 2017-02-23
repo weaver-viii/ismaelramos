@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from '@angular/core';
+import {EasterEggService} from '../../shared/easter-egg.service';
 
 declare let $;
 
@@ -13,7 +14,7 @@ export class HomePageComponent implements AfterViewInit {
   greeting: string;
   labs: Array<any>;
 
-  constructor() {
+  constructor(private easterEggService: EasterEggService) {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
     this.labs = [
       {
@@ -30,5 +31,6 @@ export class HomePageComponent implements AfterViewInit {
 
   clickGreeting() {
     $('#greeting span').textillate({in: {effect: 'hinge'}});
+    this.easterEggService.decreaseCounter();
   }
 }
