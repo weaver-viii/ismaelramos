@@ -1,11 +1,11 @@
 :host(ir-home-page) {
   .left {
-    width: 80px;
+    width: 70px;
     float: left;
     font-size: 0.7em;
     opacity: .33;
     text-align: right;
-    line-height: 1.5em;
+    line-height: 2em;
   }
   .right {
     margin-left: 90px;
@@ -15,16 +15,21 @@
   }
 
   #greeting {
-    font-weight: 100;
-    font-size: 1em;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 2em;
   }
 
   #about {
-    font-weight: normal;
-    font-size: 0.8em;
+    font-weight: 100;
+    font-size: 0.9em;
+    width: 90%;
+    text-align: justify;
+    line-height: 1.5em;
   }
 
   #wrapper {
+    overflow-x: hidden !important;
     width: 70%;
     margin: 0 auto;
     overflow-y: auto;
@@ -34,16 +39,21 @@
     left: 0;
     top: 60px;
   }
+
+  #info-title, #info-content {
+    animation-duration: 2s;
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71, .55, .62, 1.57);
+  }
 }
 
-@keyframes fadeInDown {
-  0% {
+@keyframes fadeAndScale {
+  from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: scale(.9, .9);
   }
-
-  100% {
+  to {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1, 1);
   }
 }

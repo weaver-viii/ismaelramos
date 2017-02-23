@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,700');
+
 body {
-    font-family: Roboto Mono, monospace;
+    font-family: 'Roboto Mono', monospace;
     background: #16191b;
     font-weight: 300;
     color: #e2e6e8;
@@ -10,6 +12,7 @@ body {
 .colored {
     color: white !important;
     opacity: 1;
+    font-weight: 400;
 }
 
 a {

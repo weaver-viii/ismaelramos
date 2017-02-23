@@ -9,7 +9,7 @@ declare let $;
 })
 
 export class HomePageComponent implements AfterViewInit {
-  private greetings = ['Hello', 'Salut', 'Hallo', 'Ciao', 'Hola', 'Konnichiwa', 'Hi'];
+  private greetings = ['Hello', 'Salut', 'Hallo', 'Hola', 'Konnichiwa', 'Hi'];
   greeting: string;
 
   constructor() {
@@ -18,13 +18,6 @@ export class HomePageComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     $('#greeting').textillate({in: {delay: 250, effect: 'slideInLeft'}});
-    $('#info-title, #info-content').textillate({
-      in: {
-        delay: 5, effect: 'fadeInDown', callback: function () {
-          console.log("EEE");
-        }
-      }
-    });
   }
 
 }

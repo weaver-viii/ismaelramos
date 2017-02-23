@@ -1,6 +1,6 @@
 /*global jQuery */
-/*!	
- * FitText.js 1.1
+/*!
+ * FitText.js 1.2
  *
  * Copyright 2011, Dave Rupert http://daverupert.com
  * Released under the WTFPL license
@@ -33,8 +33,8 @@
       // Call once to set.
       resizer();
 
-      // Call on resize. Opera debounces their resize by default. 
-      $(window).on('resize', resizer);
+      // Call on resize. Opera debounces their resize by default.
+      $(window).on('resize.fittext orientationchange.fittext', resizer);
 
     });
 
