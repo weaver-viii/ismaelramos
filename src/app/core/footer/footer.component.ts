@@ -15,4 +15,11 @@ export class FooterComponent implements AfterViewInit {
     $('#footer-social-links span').textillate({initialDelay: 250, in: {effect: 'bounceInRight'}});
   }
 
+  hideEmail() {
+    $('#footer-email').hide();
+  }
+
+  showEmail() {
+    $('#footer-email').show();
+  }
 }

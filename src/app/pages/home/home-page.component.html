@@ -1,10 +1,10 @@
 <div id="wrapper">
-    <section>
+    <section id="welcome">
         <div>
             <div class="left">
             </div>
             <div class="right">
-                <h1 id="greeting" [innerHtml]="greeting"></h1>
+                <h1 id="greeting" [innerHtml]="greeting" (click)='clickGreeting()'></h1>
             </div>
             <div class="clear"></div>
         </div>
@@ -26,11 +26,8 @@
         </div>
         <div id="labs-content" class="right">
             <ul>
-                <li>
-                    <span class="number">001</span> <a>Packing up</a>
-                </li>
-                <li>
-                    <span class="number">001</span> <a>Packing up</a>
+                <li *ngFor="let lab of labs">
+                    <span class="number">{{lab.id}}</span> <a href="{{lab.link}}" target="_blank">{{lab.name}}</a>
                 </li>
             </ul>
         </div>

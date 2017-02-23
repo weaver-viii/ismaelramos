@@ -11,12 +11,24 @@ declare let $;
 export class HomePageComponent implements AfterViewInit {
   private greetings = ['Hello!', 'Salut!', 'Hallo!', 'Hola!', 'Konnichiwa!', 'Hi!', 'Hey!'];
   greeting: string;
+  labs: Array<any>;
 
   constructor() {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
+    this.labs = [
+      {
+        id: '001',
+        name: 'Packing up',
+        link: 'https://play.google.com/store/apps/details?id=packingup.core.activities&hl=es'
+      }
+    ];
   }
 
   ngAfterViewInit() {
-    $('#greeting').textillate({delay: 500, in: {delay: 250, effect: 'slideInLeft'}});
+    $('#greeting').textillate({in: {delay: 200, effect: 'slideInLeft'}});
+  }
+
+  clickGreeting() {
+    $('#greeting span').textillate({in: {effect: 'hinge'}});
   }
 }

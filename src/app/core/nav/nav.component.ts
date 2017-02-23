@@ -18,8 +18,8 @@ export class NavComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    $('#logo').textillate({in: {effect: 'bounceInLeft'}});
-    $('#languages span').textillate({initialDelay: 250, in: {effect: 'bounceInRight'}});
+    $('#logo').textillate({initialDelay: 250, in: {effect: 'bounceInLeft'}});
+    $('#languages span').textillate({initialDelay: 500, in: {effect: 'bounceInRight'}});
   }
 
   changeLanguage(language: string): void {
