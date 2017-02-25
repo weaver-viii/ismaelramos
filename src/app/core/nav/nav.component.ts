@@ -28,6 +28,9 @@ export class NavComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
+    setInterval(() => {
+      $('#eggs').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+    }, 10000);
     $('#logo').textillate({initialDelay: 250, in: {effect: 'bounceInLeft'}});
     $('#languages span').textillate({initialDelay: 500, in: {effect: 'bounceInRight'}});
   }
