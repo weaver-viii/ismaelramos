@@ -39,14 +39,16 @@ export class NavComponent implements AfterViewInit {
       let audio = new Audio('assets/audio/snake.mp3');
       audio.play();
 
-      $('#about, #labs').textillate({
+      $('#info-content').hide();
+      $('#about *, #labs *').textillate({
         in: {
-          effect: 'fadeOut',
-          callback: () => {
-            this.router.navigate(['/zoomquilt']);
-          }
+          effect: 'fadeOut'
         }
       });
+
+      setTimeout(() => {
+        this.router.navigate(['/zoomquilt']);
+      }, 8000);
     }
   }
 

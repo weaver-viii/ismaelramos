@@ -48,4 +48,15 @@ export class HomePageComponent implements AfterViewInit {
     $('#greeting span').textillate({in: {effect: 'hinge'}});
     this.easterEggService.decreaseCounter();
   }
+
+  clickSmile() {
+    $('#smile span').textillate({
+      in: {
+        effect: 'flash', callback: () => {
+          $('#smile span').hide();
+          this.easterEggService.decreaseCounter();
+        }
+      }
+    });
+  }
 }

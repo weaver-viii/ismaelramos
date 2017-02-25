@@ -1,4 +1,5 @@
 import {Injectable, EventEmitter} from '@angular/core';
+import {environment} from "../../environments/environment";
 
 @Injectable()
 export class EasterEggService {
@@ -8,7 +9,7 @@ export class EasterEggService {
 
   constructor() {
     this.refreshCounter$ = new EventEmitter();
-    this.counter = 2;
+    this.counter = environment.numberOfEggs;
   }
 
   getCounter() {
@@ -19,6 +20,9 @@ export class EasterEggService {
     if (this.counter > 0) {
       this.counter--;
       this.refreshCounter$.emit(this.counter);
+      if (this.counter === 0) {
+        this.counter = environment.numberOfEggs;
+      }
     }
   }
 }

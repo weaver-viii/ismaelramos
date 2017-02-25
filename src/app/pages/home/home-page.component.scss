@@ -32,6 +32,16 @@
     line-height: 1.5em;
   }
 
+  #smile {
+    width: 100%;
+    text-align: center;
+
+    span {
+      transform: rotate(90deg);
+      display: inline-block;
+    }
+  }
+
   #wrapper {
     overflow-x: hidden !important;
     width: 70%;

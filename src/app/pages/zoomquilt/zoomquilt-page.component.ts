@@ -1,6 +1,4 @@
-import {Component} from '@angular/core';
-
-declare let $;
+import {Component, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'ir-zoomquilt-page',
@@ -8,8 +6,15 @@ declare let $;
   styleUrls: ['zoomquilt-page.component.scss']
 })
 
-export class ZoomquiltPageComponent {
+export class ZoomquiltPageComponent implements OnDestroy {
+  private audio: any;
 
   constructor() {
+    this.audio = new Audio('assets/audio/applescal.mp3');
+    this.audio.play();
+  }
+
+  ngOnDestroy() {
+    this.audio.pause();
   }
 }
