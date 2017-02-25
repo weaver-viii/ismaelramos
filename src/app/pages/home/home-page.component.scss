@@ -98,6 +98,28 @@
     animation-name: fadeAndScale;
     animation-timing-function: cubic-bezier(.71, .55, .62, 1.57);
   }
+
+  @media (max-width: 500px) {
+    #wrapper {
+      width: 100%;
+
+      #about, #labs {
+        text-align: left;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    #about, #labs {
+      font-weight: 300;
+      font-size: 0.8em;
+      line-height: 1em;
+    }
+
+    #labs-content {
+      margin-bottom: 3em;
+    }
+  }
 }
 
 @keyframes fadeAndScale {
