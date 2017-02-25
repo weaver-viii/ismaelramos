@@ -20,6 +20,9 @@ export class FooterComponent implements AfterViewInit {
   }
 
   hideEmail() {
+    let div = 'footer > div';
+    $(div).css('display', 'inline-table');
+    $(div).css('float', 'right');
     $('#footer-email').hide();
     this.easterEggService.decreaseCounter();
   }
