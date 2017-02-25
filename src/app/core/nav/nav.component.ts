@@ -1,6 +1,7 @@
 import {Component, AfterViewInit} from '@angular/core';
 import {TranslateService} from 'ng2-translate';
 import {EasterEggService} from '../../shared/easter-egg.service';
+import {Router} from '@angular/router';
 
 declare let $;
 
@@ -16,6 +17,7 @@ export class NavComponent implements AfterViewInit {
   eggsCounter: number;
 
   constructor(private easterEggService: EasterEggService,
+              private router: Router,
               translateService: TranslateService) {
     this.translateService = translateService;
 
@@ -32,6 +34,20 @@ export class NavComponent implements AfterViewInit {
 
   refreshCounter(counter): void {
     this.eggsCounter = counter;
+
+    if (this.eggsCounter === 0) {
+      let audio = new Audio('assets/audio/snake.mp3');
+      audio.play();
+
+      $('#about, #labs').textillate({
+        in: {
+          effect: 'fadeOut',
+          callback: () => {
+            this.router.navigate(['/zoomquilt']);
+          }
+        }
+      });
+    }
   }
 
   changeLanguage(language: string): void {
