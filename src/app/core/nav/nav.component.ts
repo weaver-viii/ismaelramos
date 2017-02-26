@@ -43,7 +43,7 @@ export class NavComponent implements AfterViewInit {
       audio.play();
 
       $('#info-content').hide();
-      $('#about *, #labs *').textillate({
+      $('#about *, #labs *, #path *').textillate({
         in: {
           effect: 'fadeOut'
         }

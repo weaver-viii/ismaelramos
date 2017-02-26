@@ -21,15 +21,19 @@
     display: inline-block;
     font-size: 1.4em;
     font-weight: 400;
-    line-height: 2em;
+    margin: 0 0 0.5em 0;
   }
 
-  #about, #labs {
+  #about, #labs, #path {
     font-weight: 200;
     font-size: 0.9em;
     width: 90%;
     text-align: justify;
     line-height: 1.5em;
+  }
+
+  #path-content {
+    margin-top: 1em;
   }
 
   #smile {
@@ -103,7 +107,8 @@
     }
   }
 
-  #info-title, #info-content, #labs-title, #labs-content {
+  #info-title, #info-content, #labs-title, #labs-content,
+  #path-title, #path-content {
     animation-duration: 2s;
     animation-name: fadeAndScale;
     animation-timing-function: cubic-bezier(.71, .55, .62, 1.57);
@@ -113,14 +118,14 @@
     #wrapper {
       width: 100%;
 
-      #about, #labs {
+      #about, #labs, #path {
         text-align: left;
       }
     }
   }
 
   @media (max-width: 450px) {
-    #about, #labs {
+    #about, #labs, #path {
       font-weight: 300;
       font-size: 0.8em;
       line-height: 1em;
