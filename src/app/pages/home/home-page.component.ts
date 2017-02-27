@@ -19,7 +19,7 @@ export class HomePageComponent implements AfterViewInit {
     this.labs = [
       {
         id: '001',
-        name: 'Peluqueria Pilar Silvan',
+        name: 'Web Peluqueria Pilar Silvan',
         link: 'https://www.peluqueriapilarsilvan.com'
       },
       {
