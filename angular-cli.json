@@ -26,7 +26,8 @@
         "assets/js/jquery.fittext.js",
         "assets/js/jquery.lettering.js",
         "assets/js/highlight.min.js",
-        "assets/js/jquery.textillate.js"
+        "assets/js/jquery.textillate.js",
+        "assets/js/google-analytics.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
