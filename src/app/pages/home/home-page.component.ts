@@ -12,10 +12,20 @@ declare let $;
 export class HomePageComponent implements AfterViewInit {
   private greetings = ['Hello!', 'Salut!', 'Hallo!', 'Hola!', 'Konnichiwa!', 'Hi!', 'Hey!'];
   greeting: string;
+  randomLike: string;
   labs: Array<any>;
 
   constructor(private easterEggService: EasterEggService) {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
+    let likes = ['electronicMusic', 'goToCinema', 'myGirlfriend', 'goCiclying',
+      'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'coding', 'playVideogames',
+      'driving', 'sleeping'];
+
+    this.randomLike = likes[Math.floor(Math.random() * likes.length)];
+    setInterval(() => {
+      this.randomLike = likes[Math.floor(Math.random() * likes.length)];
+    }, 3000);
+
     this.labs = [
       {
         id: '001',
