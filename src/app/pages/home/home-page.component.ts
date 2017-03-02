@@ -1,6 +1,5 @@
 import {Component, AfterViewInit} from '@angular/core';
 import {EasterEggService} from '../../shared/easter-egg.service';
-import {TranslateService} from 'ng2-translate';
 
 declare let $;
 
@@ -16,8 +15,7 @@ export class HomePageComponent implements AfterViewInit {
   randomLike: string;
   projects: Array<any>;
 
-  constructor(private easterEggService: EasterEggService,
-              private translateService: TranslateService) {
+  constructor(private easterEggService: EasterEggService) {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
     let likes = ['electronicMusic', 'goToCinema', 'myGirlfriend', 'goCiclying',
       'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'coding', 'playVideogames',
@@ -25,30 +23,33 @@ export class HomePageComponent implements AfterViewInit {
 
     this.loopLikes(likes, 0);
 
-    this.translateService.get(['PPSWebsite', 'PackingUpApp', 'GSCApp']).subscribe((texts) => {
-      this.projects = [
-        {
-          id: '001',
-          name: texts['PPSWebsite'],
-          link: 'https://www.peluqueriapilarsilvan.com'
-        },
-        {
-          id: '002',
-          name: texts['PackingUpApp'],
-          link: 'https://play.google.com/store/apps/details?id=packingup.core.activities&hl=es'
-        },
-        {
-          id: '003',
-          name: 'SECD',
-          link: 'https://sourceforge.net/projects/secd/'
-        },
-        {
-          id: '004',
-          name: texts['GSCApp'],
-          link: 'https://play.google.com/store/apps/details?id=gijonsquashclub.liga'
-        },
-      ];
-    });
+    this.projects = [
+      {
+        id: '001',
+        name: 'PPSWebsite',
+        link: 'https://www.peluqueriapilarsilvan.com'
+      },
+      {
+        id: '002',
+        name: 'PackingUpApp',
+        link: 'https://play.google.com/store/apps/details?id=packingup.core.activities&hl=es'
+      },
+      {
+        id: '003',
+        name: 'SECD',
+        link: 'https://sourceforge.net/projects/secd/'
+      },
+      {
+        id: '004',
+        name: 'GSCApp',
+        link: 'https://play.google.com/store/apps/details?id=gijonsquashclub.liga'
+      },
+      {
+        id: '005',
+        name: 'thisWebpage',
+        link: 'https://github.com/Ismaestro/ismaelramos'
+      },
+    ];
   }
 
   loopLikes(likes, index) {

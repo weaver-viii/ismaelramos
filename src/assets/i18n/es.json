@@ -1,6 +1,5 @@
 {
   "infoContent": "Soy Ismael Ramos, un desarrollador web que vive en Madrid. Actualmente estoy trabajando con Angular2 en un proyecto fintech como Frontend. Más abajo puedes ver algunos de mis proyectos, y el resto en mi Github.",
-  "toBeContinued": "continuará",
   "iLike": "Me gusta",
   "electronicMusic": "la música electrónica",
   "goToCinema": "ir al cine",
@@ -20,5 +19,6 @@
   "technologies": "Tecnologías",
   "PPSWebsite": "Web Peluquería Pilar Silvan",
   "PackingUpApp": "Aplicación Packing Up",
-  "GSCApp": "Aplicación Gijón Squash Club"
+  "GSCApp": "Aplicación Gijón Squash Club",
+  "thisWebpage": "Esta web (:"
 }
