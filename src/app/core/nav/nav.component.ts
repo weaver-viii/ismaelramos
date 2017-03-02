@@ -31,7 +31,11 @@ export class NavComponent implements AfterViewInit {
     setInterval(() => {
       $('#eggs').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
     }, 10000);
-    $('#logo').textillate({initialDelay: 250, in: {effect: 'bounceInLeft'}});
+    $('#logo').textillate({
+      initialDelay: 250, in: {effect: 'bounceInLeft'}, callback: function () {
+        $('#logo > span > span > span.char2').css('margin-left', '-7px');
+      }
+    });
     $('#languages span').textillate({initialDelay: 500, in: {effect: 'bounceInRight'}});
   }
 
