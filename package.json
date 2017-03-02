@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run ng",
     "ng": "ng serve",
-    "deploy": "ng github-pages:deploy --base-href /",
+    "build": "ng build --prod --base-href /",
     "tslint": "tslint \"src/**/*.ts\"; exit 0",
     "test": "ng test",
     "e2e": "npm run pree2e | protractor",
