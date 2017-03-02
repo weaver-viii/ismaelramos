@@ -10,15 +10,21 @@
             <div class="clear"></div>
         </div>
     </section>
-    <section id="about">
+    <section id="info">
         <div id="info-title" class="left">
             INFO.
         </div>
         <div id="info-content" class="right">
             {{'infoContent' | translate}}
-            <br>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <section id="about">
+        <div id="about-title" class="left">
+            {{'aboutMe' | translate | uppercase}}.
+        </div>
+        <div id="about-content" class="right">
             <p>{{'iLike' | translate}}, {{randomLike | translate}}</p>
-            <br>
             <div id="smile">
                 <span (click)="clickSmile()">
                     :)
@@ -29,7 +35,7 @@
     </section>
     <section id="path">
         <div id="path-title" class="left">
-            PATH.
+            {{'technologies' | translate | uppercase}}.
         </div>
         <div id="path-content" class="right">
             <span>C++</span> · <span>Java 7</span> · <span>HTML5/CSS3</span> ·
@@ -38,14 +44,15 @@
         </div>
         <div class="clear"></div>
     </section>
-    <section id="labs">
-        <div id="labs-title" class="left">
-            LABS.
+    <section id="projects">
+        <div id="projects-title" class="left">
+            {{'projects' | translate | uppercase}}.
         </div>
-        <div id="labs-content" class="right">
+        <div id="projects-content" class="right">
             <ul>
-                <li *ngFor="let lab of labs">
-                    <span class="number">{{lab.id}}</span> <a href="{{lab.link}}" target="_blank">{{lab.name}}</a>
+                <li *ngFor="let project of projects">
+                    <span class="number">{{project.id}}</span>
+                    <a href="{{project.link}}" target="_blank">{{project.name}}</a>
                 </li>
             </ul>
         </div>

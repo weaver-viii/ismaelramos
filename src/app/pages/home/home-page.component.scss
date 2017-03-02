@@ -1,13 +1,13 @@
 :host(ir-home-page) {
   .left {
-    width: 70px;
+    width: 100px;
     float: left;
     font-size: 0.7em !important;
     text-align: right;
     line-height: 1.9em;
   }
   .right {
-    margin-left: 90px;
+    margin-left: 115px;
   }
   .clear {
     clear: both;
@@ -24,7 +24,7 @@
     margin: 0 0 0.5em 0;
   }
 
-  #about, #labs, #path {
+  #info, #about, #projects, #path {
     font-weight: 200;
     font-size: 0.9em;
     width: 90%;
@@ -58,7 +58,7 @@
     top: 60px;
   }
 
-  #labs-content {
+  #projects-content {
     ul {
       list-style: none;
       padding: 0;
@@ -107,7 +107,13 @@
     }
   }
 
-  #info-title, #info-content, #labs-title, #labs-content,
+  #about-content {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  #info-title, #info-content, #about-title, #about-content, #projects-title, #projects-content,
   #path-title, #path-content {
     animation-duration: 2s;
     animation-name: fadeAndScale;
@@ -118,20 +124,20 @@
     #wrapper {
       width: 100%;
 
-      #about, #labs, #path {
+      #about, #projects, #path {
         text-align: left;
       }
     }
   }
 
   @media (max-width: 450px) {
-    #about, #labs, #path {
+    #info, #about, #projects, #path {
       font-weight: 300;
       font-size: 0.8em;
       line-height: 1em;
     }
 
-    #labs-content {
+    #projects-content {
       margin-bottom: 3em;
     }
   }
