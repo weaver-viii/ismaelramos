@@ -11,7 +11,8 @@
         "assets",
         "favicon.jpeg",
         "sitemap.xml",
-        "googled41787c6aae2151b.html"
+        "googled41787c6aae2151b.html",
+        "CNAME"
       ],
       "index": "index.html",
       "main": "main.ts",
