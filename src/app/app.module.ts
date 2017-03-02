@@ -31,6 +31,7 @@ import {ZoomquiltPageComponent} from './pages/zoomquilt/zoomquilt-page.component
   ],
   declarations: [
     AppComponent,
+
     HomePageComponent,
     ZoomquiltPageComponent
   ],
