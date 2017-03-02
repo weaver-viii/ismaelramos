@@ -23,7 +23,8 @@ export class HomePageComponent implements AfterViewInit {
       'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'coding', 'playVideogames',
       'driving', 'sleeping'];
 
-    this.loadLikes(likes);
+    this.randomLike = likes[Math.floor(Math.random() * likes.length)];
+    this.loopLikes(likes);
 
     this.translateService.get(['PPSWebsite', 'PackingUpApp', 'GSCApp']).subscribe((texts) => {
       this.projects = [
@@ -51,13 +52,16 @@ export class HomePageComponent implements AfterViewInit {
     });
   }
 
-  loadLikes(likes) {
+  loopLikes(likes) {
     let offset = 0;
-    likes.forEach((like) => {
+    likes.forEach((like, index) => {
       setTimeout(() => {
         this.randomLike = like;
-      }, 2500 + offset);
-      offset += 2500;
+        if (index === likes.length - 1) {
+          this.loopLikes(likes);
+        }
+      }, 3000 + offset);
+      offset += 3000;
     });
   }
 
