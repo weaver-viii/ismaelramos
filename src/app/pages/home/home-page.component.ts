@@ -23,8 +23,7 @@ export class HomePageComponent implements AfterViewInit {
       'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'coding', 'playVideogames',
       'driving', 'sleeping'];
 
-    this.randomLike = likes[Math.floor(Math.random() * likes.length)];
-    this.loopLikes(likes);
+    this.loopLikes(likes, 0);
 
     this.translateService.get(['PPSWebsite', 'PackingUpApp', 'GSCApp']).subscribe((texts) => {
       this.projects = [
@@ -52,17 +51,14 @@ export class HomePageComponent implements AfterViewInit {
     });
   }
 
-  loopLikes(likes) {
-    let offset = 0;
-    likes.forEach((like, index) => {
-      setTimeout(() => {
-        this.randomLike = like;
-        if (index === likes.length - 1) {
-          this.loopLikes(likes);
-        }
-      }, 3000 + offset);
-      offset += 3000;
-    });
+  loopLikes(likes, index) {
+    if (index === likes.length) {
+      return this.loopLikes(likes, 0);
+    }
+    this.randomLike = likes[index];
+    setTimeout(() => {
+      this.loopLikes(likes, index + 1);
+    }, 3000);
   }
 
   ngAfterViewInit() {
