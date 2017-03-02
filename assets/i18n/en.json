@@ -1,6 +1,5 @@
 {
-  "infoContent": "I'm Ismael Ramos, a Web Developer living in Madrid who likes to learn new things every day, make apps, and have fun coding. I work across the full JavaScript stack (now I am working with Angular 2 in a fintech project). Here are a few projects, and you can see more in my Github.",
-  "toBeContinued": "to be continued",
+  "infoContent": "I'm Ismael Ramos, a Web Developer living in Madrid. Actually, I am working with Angular2 in a fintech project as a Frontend. Here are some of my projects, and you can see more in my Github.",
   "iLike": "I like",
   "electronicMusic": "electronic music",
   "goToCinema": "going to the cinema",
@@ -17,8 +16,9 @@
   "astronomy": "astronomy",
   "aboutMe": "About me",
   "projects": "Projects",
-  "technologies": "Tecnologies",
+  "technologies": "Technologies",
   "PPSWebsite": "Website Pilar Silvan Hairdresser",
   "PackingUpApp": "Packing Up App",
-  "GSCApp": "Gijón Squash Club App"
+  "GSCApp": "Gijón Squash Club App",
+  "thisWebpage": "This website (:"
 }
