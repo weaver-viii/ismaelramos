@@ -17,8 +17,8 @@ export class HomePageComponent implements AfterViewInit {
 
   constructor(private easterEggService: EasterEggService) {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
-    let likes = ['electronicMusic', 'goToCinema', 'myGirlfriend', 'goCiclying',
-      'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'coding', 'playVideogames',
+    let likes = ['electronicMusic', 'goToCinema', 'goCiclying',
+      'goingToTheMountain', 'playingSquash', 'myGirlfriend', 'swimming', 'diving', 'coding', 'playVideogames',
       'driving', 'sleeping'];
 
     this.loopLikes(likes, 0);
