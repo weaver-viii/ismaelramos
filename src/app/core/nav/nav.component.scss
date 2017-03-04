@@ -37,4 +37,10 @@
       cursor: pointer;
     }
   }
+
+  @media (max-width: 860px) {
+    #eggs {
+      display: none;
+    }
+  }
 }
