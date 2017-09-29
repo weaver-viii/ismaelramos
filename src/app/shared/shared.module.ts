@@ -1,9 +1,16 @@
-import {NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule} from '@angular/core';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
-  declarations: [],
-  exports: []
+  imports: [TranslateModule],
+  exports: [TranslateModule]
 })
 
 export class SharedModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: SharedModule,
+      providers: []
+    };
+  }
 }

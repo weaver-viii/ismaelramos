@@ -1,9 +1,8 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import {Http, HttpModule} from '@angular/http';
-import {TranslateModule, TranslateLoader} from 'ng2-translate';
-import {TranslateLoaderFactory} from './app.translate.factory';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpLoaderFactory} from './app.translate.factory';
 
 import {APP_CONFIG, AppConfig} from './config/app.config';
 
@@ -14,20 +13,25 @@ import {CoreModule} from './core/core.module';
 import {AppComponent} from './app.component';
 import {HomePageComponent} from './pages/home/home-page.component';
 import {ZoomquiltPageComponent} from './pages/zoomquilt/zoomquilt-page.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: TranslateLoaderFactory,
-      deps: [Http]
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
     }),
-    AppRoutingModule,
+    SharedModule.forRoot(),
     CoreModule,
-    SharedModule
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,

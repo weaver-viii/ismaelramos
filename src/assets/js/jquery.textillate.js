@@ -248,7 +248,8 @@
     return this.each(function () {
       var $this = $(this)
         , data = $this.data('textillate')
-        , options = $.extend(true, {}, $.fn.textillate.defaults, getData(this), typeof settings == 'object' && settings);
+        ,
+        options = $.extend(true, {}, $.fn.textillate.defaults, getData(this), typeof settings == 'object' && settings);
 
       if (!data) {
         $this.data('textillate', (data = new Textillate(this, options)));

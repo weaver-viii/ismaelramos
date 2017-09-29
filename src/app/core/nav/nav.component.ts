@@ -1,5 +1,5 @@
-import {Component, AfterViewInit} from '@angular/core';
-import {TranslateService} from 'ng2-translate';
+import {AfterViewInit, Component} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 import {EasterEggService} from '../../shared/easter-egg.service';
 import {Router} from '@angular/router';
 

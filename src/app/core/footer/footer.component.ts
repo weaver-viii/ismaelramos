@@ -1,4 +1,4 @@
-import {Component, AfterViewInit} from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import {EasterEggService} from '../../shared/easter-egg.service';
 
 declare let $;

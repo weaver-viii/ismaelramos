@@ -1,10 +1,10 @@
-import {IsmaelRamosHomePage} from './app.po';
+import {HomePage} from './home-page';
 
 describe('Ismael Ramos App', function () {
-  let page: IsmaelRamosPage;
+  let page: HomePage;
 
   beforeEach(() => {
-    page = new IsmaelRamosPage();
+    page = new HomePage();
   });
 
   it('Title', () => {
