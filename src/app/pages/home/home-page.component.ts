@@ -36,16 +36,21 @@ export class HomePageComponent implements AfterViewInit {
       },
       {
         id: '003',
+        name: 'AngularExampleApp',
+        link: 'https://angularexampleapp.com'
+      },
+      {
+        id: '004',
         name: 'SECD',
         link: 'https://sourceforge.net/projects/secd/'
       },
       {
-        id: '004',
+        id: '005',
         name: 'GSCApp',
         link: 'https://play.google.com/store/apps/details?id=gijonsquashclub.liga'
       },
       {
-        id: '005',
+        id: '006',
         name: 'thisWebpage',
         link: 'https://github.com/Ismaestro/ismaelramos'
       },

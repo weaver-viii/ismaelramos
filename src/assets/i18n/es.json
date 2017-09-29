@@ -17,8 +17,10 @@
   "aboutMe": "Sobre mi",
   "projects": "Proyectos",
   "technologies": "Tecnologías",
-  "PPSWebsite": "Web Peluquería Pilar Silvan",
-  "PackingUpApp": "Aplicación Packing Up",
-  "GSCApp": "Aplicación Gijón Squash Club",
-  "thisWebpage": "Esta web (:"
+  "PPSWebsite": "pps web (AMP)",
+  "AngularExampleApp": "angular app de ejemplo - proyecto base (Angular)",
+  "PackingUpApp": "packing up app (Ionic)",
+  "GSCApp": "Gijón squash club app (Java legacy)",
+  "thisWebpage": "Lo que estas viendo ahora :) (Angular)",
+  "futureWhoKnows": "y en el futuro, !¿quien sabe?!"
 }
