@@ -17,6 +17,11 @@
     overflow: hidden;
   }
 
+  #greeting-container {
+    text-align: center;
+    margin: 0;
+  }
+
   #greeting {
     display: inline-block;
     font-size: 1.4em;
@@ -28,12 +33,15 @@
     font-weight: 200;
     font-size: 0.9em;
     width: 90%;
-    text-align: justify;
     line-height: 1.5em;
   }
 
   #path-content {
     margin-top: 1em;
+  }
+
+  #path {
+    margin-bottom: 1rem;
   }
 
   #smile {

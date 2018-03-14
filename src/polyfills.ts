@@ -13,6 +13,7 @@ import 'core-js/es6/map';
 import 'core-js/es6/set';
 import 'core-js/es6/reflect';
 
+import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
@@ -28,3 +29,5 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/startWith';
+
+import 'classlist.js';

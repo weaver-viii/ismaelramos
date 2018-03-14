@@ -33,7 +33,7 @@ export class NavComponent implements AfterViewInit {
     }, 10000);
     $('#logo').textillate({
       initialDelay: 250, in: {effect: 'bounceInLeft'}, callback: function () {
-        $('#logo > span > span > span.char2').css('margin-left', '-7px');
+        $('#logo > span > span > span.char2').css('margin-left', '-3px');
       }
     });
     $('#languages span').textillate({initialDelay: 500, in: {effect: 'bounceInRight'}});
@@ -43,7 +43,7 @@ export class NavComponent implements AfterViewInit {
     this.eggsCounter = counter;
 
     if (this.eggsCounter === 0) {
-      let audio = new Audio('assets/audio/snake.mp3');
+      const audio = new Audio('assets/audio/snake.mp3');
       audio.play();
 
       $('#info-content').hide();

@@ -14,11 +14,13 @@ export class HomePageComponent implements AfterViewInit {
   greeting: string;
   randomLike: string;
   projects: Array<any>;
+  scrollbarOptions = {axis: 'yx', theme: 'light-thin', scrollButtons: {enable: true}};
 
   constructor(private easterEggService: EasterEggService) {
+
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
-    let likes = ['electronicMusic', 'goToCinema', 'goCiclying',
-      'goingToTheMountain', 'playingSquash', 'myGirlfriend', 'swimming', 'diving', 'coding', 'playVideogames',
+    const likes = ['electronicMusic', 'goToCinema', 'goCiclying',
+      'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'playVideogames',
       'driving', 'sleeping'];
 
     this.loopLikes(likes, 0);
@@ -31,26 +33,31 @@ export class HomePageComponent implements AfterViewInit {
       },
       {
         id: '002',
-        name: 'PackingUpApp',
-        link: 'https://play.google.com/store/apps/details?id=packingup.core.activities&hl=es'
-      },
-      {
-        id: '003',
         name: 'AngularExampleApp',
         link: 'https://angularexampleapp.com'
       },
       {
+        id: '003',
+        name: 'AngularExampleLibrary',
+        link: 'https://github.com/Ismaestro/angular-example-library'
+      },
+      {
         id: '004',
+        name: 'PackingUpApp',
+        link: 'https://play.google.com/store/apps/details?id=packingup.core.activities&hl=es'
+      },
+      {
+        id: '005',
         name: 'SECD',
         link: 'https://sourceforge.net/projects/secd/'
       },
       {
-        id: '005',
+        id: '006',
         name: 'GSCApp',
         link: 'https://play.google.com/store/apps/details?id=gijonsquashclub.liga'
       },
       {
-        id: '006',
+        id: '007',
         name: 'thisWebpage',
         link: 'https://github.com/Ismaestro/ismaelramos'
       },

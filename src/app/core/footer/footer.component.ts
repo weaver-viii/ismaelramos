@@ -1,7 +1,7 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {EasterEggService} from '../../shared/easter-egg.service';
 
-declare let $;
+declare const $;
 
 @Component({
   selector: 'ir-footer',
@@ -20,7 +20,7 @@ export class FooterComponent implements AfterViewInit {
   }
 
   hideEmail() {
-    let div = 'footer > div';
+    const div = 'footer > div';
     $(div).css('display', 'inline-table');
     $(div).css('float', 'right');
     $('#footer-email').hide();

@@ -3,18 +3,15 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpLoaderFactory} from './app.translate.factory';
-
-import {APP_CONFIG, AppConfig} from './config/app.config';
-
 import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core/core.module';
-
 import {AppComponent} from './app.component';
 import {HomePageComponent} from './pages/home/home-page.component';
 import {ZoomquiltPageComponent} from './pages/zoomquilt/zoomquilt-page.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {MalihuScrollbarModule} from 'ngx-malihu-scrollbar/dist/lib';
 
 @NgModule({
   imports: [
@@ -31,6 +28,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     }),
     SharedModule.forRoot(),
     CoreModule,
+    MalihuScrollbarModule.forRoot(),
     AppRoutingModule
   ],
   declarations: [
@@ -39,7 +37,6 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     ZoomquiltPageComponent
   ],
   providers: [
-    {provide: APP_CONFIG, useValue: AppConfig}
   ],
   bootstrap: [AppComponent]
 })
