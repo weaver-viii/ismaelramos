@@ -10,9 +10,14 @@
     #footer-container {
       padding: 1em;
     }
+
+    #footer-troll {
+      display: none;
+      transform: rotate(180deg);
+    }
   }
 
-  #footer-email, #footer-email a:not(span) {
+  #footer-email, #footer-email a:not(span), #footer-troll {
     font-size: 0.9em;
     color: #e2e6e8;
     text-decoration: none;
@@ -51,9 +56,6 @@
       > div {
         margin: 0;
         text-align: center;
-      }
-
-      #footer-email {
       }
 
       #footer-social-links {

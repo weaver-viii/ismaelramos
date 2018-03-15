@@ -9,27 +9,14 @@ declare const $;
   styleUrls: ['./footer.component.scss']
 })
 
-export class FooterComponent implements AfterViewInit {
+export class FooterComponent {
 
   constructor(private easterEggService: EasterEggService) {
   }
 
-  ngAfterViewInit() {
-    $('#footer-email a').textillate({in: {effect: 'bounceInLeft'}});
-    $('#footer-social-links span').textillate({
-      initialDelay: 250, in: {
-        effect: 'bounceInRight', callback: function () {
-          $('body').css('overflow', 'auto');
-        }
-      }
-    });
-  }
-
   hideEmail() {
-    const div = 'footer > div';
-    $(div).css('display', 'inline-table');
-    $(div).css('float', 'right');
     $('#footer-email').hide();
+    $('#footer-troll').show();
     this.easterEggService.decreaseCounter();
   }
 }

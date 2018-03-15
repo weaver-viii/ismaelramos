@@ -1,4 +1,4 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {EasterEggService} from '../../shared/easter-egg.service';
 import {Router} from '@angular/router';
@@ -11,7 +11,7 @@ declare let $;
   styleUrls: ['./nav.component.scss']
 })
 
-export class NavComponent implements AfterViewInit {
+export class NavComponent {
 
   private translateService: TranslateService;
   eggsCounter: number;
@@ -25,18 +25,6 @@ export class NavComponent implements AfterViewInit {
 
     this.easterEggService.refreshCounter$.subscribe(
       counter => this.refreshCounter(counter));
-  }
-
-  ngAfterViewInit() {
-    setInterval(() => {
-      $('#eggs').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
-    }, 10000);
-    $('#logo').textillate({
-      initialDelay: 250, in: {effect: 'bounceInLeft'}, callback: function () {
-        $('#logo > span > span > span.char2').css('margin-left', '-3px');
-      }
-    });
-    $('#languages span').textillate({initialDelay: 500, in: {effect: 'bounceInRight'}});
   }
 
   refreshCounter(counter): void {

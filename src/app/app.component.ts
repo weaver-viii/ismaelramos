@@ -1,8 +1,6 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
-declare const $;
-
 @Component({
   selector: 'ir-app',
   templateUrl: './app.component.html'
