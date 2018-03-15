@@ -8,7 +8,7 @@
     width: 100%;
 
     nav {
-      display: flex;
+      display: block;
       margin: 1em;
       line-height: 1.4em;
       text-align: center;
@@ -21,20 +21,20 @@
       font-weight: bold;
       text-decoration: none;
       cursor: pointer;
-      width: 5%;
+      width: 4rem;
     }
 
     #eggs {
       font-size: 0.5em;
       opacity: 0.2;
-      width: 90%;
+      width: 4rem;
     }
 
     #languages {
       float: right;
       font-size: 0.9em;
       color: #e2e6e8;
-      width: 5%;
+      width: 4rem;
 
       span {
         opacity: .66;
@@ -49,11 +49,13 @@
         cursor: pointer;
       }
     }
+  }
 
-    @media (max-width: 860px) {
-      #eggs {
-        display: none;
-      }
+  @media (max-width: 686px) {
+    header {
+      border-bottom: 0.5px solid rgba(226, 230, 232, 0.2);
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
     }
   }
 }

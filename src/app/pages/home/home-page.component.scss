@@ -1,5 +1,5 @@
 :host(ir-home-page) {
-  #wrapper2 {
+  #wrapper {
     width: 65%;
     margin: auto;
   }
@@ -58,18 +58,6 @@
       transform: rotate(90deg);
       display: inline-block;
     }
-  }
-
-  #wrapper {
-    overflow-x: hidden !important;
-    width: 70%;
-    margin: 0 auto;
-    overflow-y: auto;
-    position: absolute;
-    bottom: 60px;
-    right: 0;
-    left: 0;
-    top: 60px;
   }
 
   #projects-content {
@@ -134,17 +122,54 @@
     animation-timing-function: cubic-bezier(.71, .55, .62, 1.57);
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 956px) {
     #wrapper {
-      width: 100%;
-
-      #about, #projects, #path {
-        text-align: left;
-      }
+      width: 85%;
     }
   }
 
+  @media (max-width: 686px) {
+    #info, #about, #projects, #path {
+      width: 100%;
+    }
+
+    #info-title, #about-title, #projects-title, #path-title {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    #info-title {
+      margin-top: 1rem;
+    }
+
+    #about-title, #projects-title, #path-title {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 3em;
+    }
+
+    #info-content, #about-content, #projects-content, #path-content {
+      width: 85%;
+      margin: 0.5rem auto 0 auto;
+      line-height: 1.5em;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  @media (max-width: 560px) {
+  #wrapper {
+    width: 95%;
+  }
+}
+
   @media (max-width: 450px) {
+    #wrapper {
+      width: 100%;
+    }
+
     #info, #about, #projects, #path {
       font-weight: 300;
       font-size: 0.8em;

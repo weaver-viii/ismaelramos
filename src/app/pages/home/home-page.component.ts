@@ -70,7 +70,7 @@ export class HomePageComponent implements AfterViewInit {
     this.randomLike = likes[index];
     setTimeout(() => {
       this.loopLikes(likes, index + 1);
-    }, 3000);
+    }, 2500);
   }
 
   ngAfterViewInit() {

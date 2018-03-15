@@ -1,12 +1,15 @@
 :host(ir-footer) {
   footer {
     margin-top: 1em;
-    padding: 1em;
     background: #16191b;
     position: sticky;
     top: 100%;
     font-size: 1em;
     align-items: center;
+
+    #footer-container {
+      padding: 1em;
+    }
   }
 
   #footer-email, #footer-email a:not(span) {
@@ -39,9 +42,11 @@
     float: right;
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 686px) {
     footer {
-      border-top: 1px solid grey;
+      border-top: 0.5px solid rgba(226, 230, 232, 0.2);
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
 
       > div {
         margin: 0;
@@ -49,13 +54,32 @@
       }
 
       #footer-email {
-        display: none;
       }
 
       #footer-social-links {
+        margin-top: 1em;
         float: none;
         a {
           margin: 1em;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    footer {
+      #footer-container {
+        padding: 1em 0;
+      }
+
+      #footer-social-links {
+        a {
+          font-size: 0.9em;
+          margin: 0;
+
+          &:nth-child(2) {
+            margin: 1.9rem;
+          }
         }
       }
     }
