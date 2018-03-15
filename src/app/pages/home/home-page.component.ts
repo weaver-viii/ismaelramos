@@ -14,7 +14,6 @@ export class HomePageComponent implements AfterViewInit {
   greeting: string;
   randomLike: string;
   projects: Array<any>;
-  scrollbarOptions = {axis: 'yx', theme: 'light-thin', scrollButtons: {enable: true}};
 
   constructor(private easterEggService: EasterEggService) {
 

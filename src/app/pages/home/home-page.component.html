@@ -1,5 +1,4 @@
-<ir-nav></ir-nav>
-<div malihu-scrollbar [scrollbarOptions]="scrollbarOptions" id="wrapper">
+<div id="wrapper2">
   <section id="welcome">
     <div>
       <div class="left">
@@ -16,15 +15,14 @@
     </div>
     <div id="info-content" class="right">
       <span [innerHTML]="'infoContent' | translate"></span>
-      <br>
-      <div id="smile">
-        <span (click)="clickSmile()">
-            :)
-        </span>
-      </div>
     </div>
     <div class="clear"></div>
   </section>
+  <div id="smile">
+        <span (click)="clickSmile()">
+            :)
+        </span>
+  </div>
   <section id="about">
     <div id="about-title" class="left">
       {{'aboutMe' | translate | uppercase}}.
@@ -60,4 +58,3 @@
     <div class="clear"></div>
   </section>
 </div>
-<ir-footer></ir-footer>

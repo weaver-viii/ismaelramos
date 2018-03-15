@@ -11,7 +11,6 @@ import {HomePageComponent} from './pages/home/home-page.component';
 import {ZoomquiltPageComponent} from './pages/zoomquilt/zoomquilt-page.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {MalihuScrollbarModule} from 'ngx-malihu-scrollbar/dist/lib';
 
 @NgModule({
   imports: [
@@ -28,7 +27,6 @@ import {MalihuScrollbarModule} from 'ngx-malihu-scrollbar/dist/lib';
     }),
     SharedModule.forRoot(),
     CoreModule,
-    MalihuScrollbarModule.forRoot(),
     AppRoutingModule
   ],
   declarations: [
@@ -36,8 +34,7 @@ import {MalihuScrollbarModule} from 'ngx-malihu-scrollbar/dist/lib';
     HomePageComponent,
     ZoomquiltPageComponent
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 

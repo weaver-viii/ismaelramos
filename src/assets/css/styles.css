@@ -44,6 +44,8 @@ table {
   border-spacing: 0;
 }
 
+html, body{ height: 100%; }
+
 body {
     font-family: 'Roboto Mono', monospace;
     background: #16191b;
@@ -61,4 +63,9 @@ body {
 
 a {
     cursor: pointer;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

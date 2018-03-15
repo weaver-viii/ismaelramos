@@ -1,4 +1,9 @@
 :host(ir-home-page) {
+  #wrapper2 {
+    width: 65%;
+    margin: auto;
+  }
+
   .left {
     width: 100px;
     float: left;
@@ -47,6 +52,7 @@
   #smile {
     width: 100%;
     text-align: center;
+    margin: 1em 0;
 
     span {
       transform: rotate(90deg);

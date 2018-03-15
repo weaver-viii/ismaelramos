@@ -16,7 +16,13 @@ export class FooterComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     $('#footer-email a').textillate({in: {effect: 'bounceInLeft'}});
-    $('#footer-social-links span').textillate({initialDelay: 250, in: {effect: 'bounceInRight'}});
+    $('#footer-social-links span').textillate({
+      initialDelay: 250, in: {
+        effect: 'bounceInRight', callback: function () {
+          $('body').css('overflow', 'auto');
+        }
+      }
+    });
   }
 
   hideEmail() {

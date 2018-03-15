@@ -1,46 +1,59 @@
 :host(ir-nav) {
-  nav {
-    margin: 1em;
-    line-height: 1.4em;
-    text-align: center;
-  }
+  padding-top: 0;
+  padding-bottom: 1rem;
+  display: grid;
 
-  #logo {
-    float: left;
-    font-size: 1.4em;
-    color: #e2e6e8;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  header {
+    z-index: 999;
+    width: 100%;
 
-  #eggs {
-    font-size: 0.5em;
-    opacity: 0.2;
-  }
-
-  #languages {
-    float: right;
-    font-size: 0.9em;
-    color: #e2e6e8;
-
-    span {
-      opacity: .66;
+    nav {
+      display: flex;
+      margin: 1em;
+      line-height: 1.4em;
+      text-align: center;
     }
 
-    span:first-child {
-      margin-right: 0.2em;
-    }
-
-    span:hover {
-      opacity: 1;
+    #logo {
+      float: left;
+      font-size: 1.4em;
+      color: #e2e6e8;
+      font-weight: bold;
+      text-decoration: none;
       cursor: pointer;
+      width: 5%;
     }
-  }
 
-  @media (max-width: 860px) {
     #eggs {
-      display: none;
+      font-size: 0.5em;
+      opacity: 0.2;
+      width: 90%;
+    }
+
+    #languages {
+      float: right;
+      font-size: 0.9em;
+      color: #e2e6e8;
+      width: 5%;
+
+      span {
+        opacity: .66;
+      }
+
+      span:first-child {
+        margin-right: 0.2em;
+      }
+
+      span:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 860px) {
+      #eggs {
+        display: none;
+      }
     }
   }
 }

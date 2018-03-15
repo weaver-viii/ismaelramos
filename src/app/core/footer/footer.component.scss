@@ -1,17 +1,12 @@
 :host(ir-footer) {
-  width: 100%;
-
   footer {
+    margin-top: 1em;
+    padding: 1em;
     background: #16191b;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: sticky;
+    top: 100%;
     font-size: 1em;
-
-    > div {
-      margin: 1em;
-    }
+    align-items: center;
   }
 
   #footer-email, #footer-email a:not(span) {
