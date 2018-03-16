@@ -10,14 +10,11 @@ declare let $;
 })
 
 export class HomePageComponent implements AfterViewInit {
-  private greetings = ['Hello!', 'Salut!', 'Hallo!', 'Hola!', 'Konnichiwa!', 'Hi!', 'Hey!'];
-  greeting: string;
   randomLike: string;
   projects: Array<any>;
 
   constructor(private easterEggService: EasterEggService) {
 
-    this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
     const likes = ['electronicMusic', 'goToCinema', 'goCiclying',
       'goingToTheMountain', 'playingSquash', 'swimming', 'diving', 'playVideogames',
       'driving', 'sleeping'];
@@ -78,7 +75,7 @@ export class HomePageComponent implements AfterViewInit {
   }
 
   clickGreeting() {
-    $('#greeting span').textillate({in: {effect: 'hinge'}});
+    $('#greeting img').textillate({in: {effect: 'hinge'}});
     this.easterEggService.decreaseCounter();
   }
 

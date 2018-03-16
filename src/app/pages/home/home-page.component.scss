@@ -25,13 +25,11 @@
   #greeting-container {
     text-align: center;
     margin: 0;
-  }
 
-  #greeting {
-    display: inline-block;
-    font-size: 1.4em;
-    font-weight: 400;
-    margin: 0 0 0.5em 0;
+    img {
+      width: 20%;
+      margin: 0 0 1rem 3rem;
+    }
   }
 
   #info, #about, #projects, #path {
@@ -129,6 +127,13 @@
   }
 
   @media (max-width: 686px) {
+    #greeting-container {
+      img {
+        width: 30%;
+        margin: 0 0 1rem 2rem;
+      }
+    }
+
     #info, #about, #projects, #path {
       width: 100%;
     }
@@ -164,14 +169,27 @@
   }
 
   @media (max-width: 560px) {
-  #wrapper {
-    width: 95%;
+    #wrapper {
+      width: 95%;
+    }
+
+    #greeting-container {
+      img {
+        width: 40%;
+        margin: 0 0 0 2rem;
+      }
+    }
   }
-}
 
   @media (max-width: 450px) {
     #wrapper {
       width: 100%;
+    }
+
+    #greeting-container {
+      img {
+        width: 50%;
+      }
     }
 
     #info, #about, #projects, #path {
